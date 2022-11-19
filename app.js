@@ -9,4 +9,4 @@ app.use(homePage);
 app.use((req,res)=>{
     res.status(404).send('<h1>Page Not Found</h1>')
 });
-app.listen(4000);
+app.listen(3000);

@@ -12,7 +12,7 @@ router.post('/',(req,res)=>{
 router.post('/msg',(req,res)=>{
     
     //console.log(req.body);
-    fs.appendFileSync("message.txt",`${req.body.username} : ${req.body.msg}`)
+    fs.appendFileSync("message.txt",`${req.body.username} : ${req.body.msg}`)//parsing data
     res.redirect('/');
 })
 router.get('/',(req,res)=>{
